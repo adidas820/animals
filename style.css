@@ -18,8 +18,9 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40vh;
+    height: 50vh;
     margin: 5vh;
+    margin-bottom: 10%;
 }
 
 #landing {
@@ -27,15 +28,14 @@ main {
     margin-right: 30px;
 }
 
-#landing-img {
-    width: 50%;
+#separator {
     background-color: #212529;
-    height: 100%;
+    height: 20vh;
+    width: 100%;
 }
 
 footer {
     position:absolute;
-    bottom:0;
     width:100%;
     height:50px;
     background:#212529;
@@ -58,4 +58,67 @@ footer {
     height: 3px;
     background-color: #1a9fff;
     border-radius: 3px;
+}
+
+
+/* Carousel */
+
+#landing-img {
+    width: 40%;
+    background-color: #212529;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; 
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* Sombra suave */
+}
+
+#carouselId {
+    width: 100%; 
+    height: 100%;
+}
+
+.carousel-inner {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 20px;  
+    height: 8px;  
+    background-color: white; 
+    border-radius: 10px; 
+    overflow: hidden;
+    margin: 0 4px;
+}
+
+/* Cards */
+
+#cards {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+.card {
+    min-width: 11rem;
+    margin: 20px;
+}
+
+@media only screen and (max-width: 1300px) {
+    #cards {
+        flex-wrap: wrap;
+    }
 }
