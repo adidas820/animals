@@ -2,8 +2,13 @@
     color: #1a9fff;
 }
 
+::selection {
+    background-color: #53A4D2;
+    color: white;
+}
+
 body {
-    background-color: #2c323b;
+    background-color: #1B2838;
     color: white;
     margin: 0;
     padding: 0;
@@ -78,6 +83,24 @@ footer {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* Sombra suave */
 }
 
+.animal-carousel {
+    width: 900px;
+    background-color: #212529;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; 
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* Sombra suave */
+}
+
+#animal-container {
+    width: 100%;
+    justify-items: center;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+}
+
 #carouselId {
     width: 100%; 
     height: 100%;
@@ -119,6 +142,37 @@ footer {
 .card {
     min-width: 11rem;
     margin: 20px;
+    background-color: #293745;
+    color: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.btn-primary {
+    background-color: #222E3C;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+.btn-primary:hover {
+    background-color: #1a9fff;
+}
+
+
+#siximg {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+
+.col {
+    padding: 0;
 }
 
 /* Condicionales de resolucion  */
@@ -136,6 +190,13 @@ footer {
     #landing-img {
         width: 100%;
         height: 100vh;
+    }
+    .animal-carousel {
+        width: 100%;
+        height: 80vh;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 10vh;
     }
     #arrow {
         visibility: visible;
